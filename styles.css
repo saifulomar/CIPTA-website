@@ -492,6 +492,10 @@ body::before {
   grid-template-columns: repeat(2, minmax(0, 1fr));
 }
 
+.gallery-grid-expanded {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
 .gallery-item {
   margin: 0;
   border: 1px solid var(--line);
@@ -506,6 +510,18 @@ body::before {
   width: 100%;
   aspect-ratio: 4 / 3;
   object-fit: cover;
+}
+
+.gallery-item figcaption {
+  padding: 16px 18px 18px;
+  color: var(--muted);
+  line-height: 1.65;
+}
+
+.section-intro {
+  margin: 16px 0 0;
+  color: var(--muted);
+  line-height: 1.75;
 }
 
 .logo-abstract-gallery {
