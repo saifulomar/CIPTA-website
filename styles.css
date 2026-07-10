@@ -132,6 +132,72 @@ body::before {
   font-size: 0.94rem;
 }
 
+.nav-social {
+  display: none;
+}
+
+.social-icon-link,
+.social-text-link {
+  text-decoration: none;
+}
+
+.social-icon-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 42px;
+  height: 42px;
+  border-radius: 999px;
+  border: 1px solid rgba(255, 248, 245, 0.24);
+  background: rgba(255, 248, 245, 0.08);
+}
+
+.social-text-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  width: fit-content;
+}
+
+.social-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 22px;
+  height: 22px;
+  border-radius: 999px;
+  font-size: 1rem;
+  font-weight: 800;
+  line-height: 1;
+  color: currentColor;
+}
+
+.social-icon-instagram {
+  width: 20px;
+  height: 20px;
+  border: 2px solid currentColor;
+  position: relative;
+}
+
+.social-icon-instagram::before {
+  content: "";
+  position: absolute;
+  inset: 4px;
+  border: 2px solid currentColor;
+  border-radius: 999px;
+}
+
+.social-icon-instagram::after {
+  content: "";
+  position: absolute;
+  top: 2px;
+  right: 2px;
+  width: 4px;
+  height: 4px;
+  border-radius: 999px;
+  background: currentColor;
+}
+
 .site-nav a:hover,
 .site-nav a:focus-visible,
 .site-nav a.is-active {
@@ -685,6 +751,17 @@ body::before {
   font-weight: 600;
 }
 
+.contact-social {
+  display: grid;
+  gap: 10px;
+  margin-top: 12px;
+}
+
+.contact-social .card-kicker {
+  margin: 0;
+  color: rgba(255, 250, 241, 0.7);
+}
+
 .resource-link {
   color: var(--green);
   font-weight: 700;
@@ -730,6 +807,14 @@ body::before {
 
   .site-nav.is-open {
     display: flex;
+  }
+
+  .nav-social {
+    display: flex;
+    gap: 10px;
+    padding-top: 8px;
+    border-top: 1px solid rgba(255, 248, 245, 0.2);
+    margin-top: 4px;
   }
 
   .hero-main,
