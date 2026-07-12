@@ -464,6 +464,38 @@ body::before {
   align-content: start;
 }
 
+.registration-copy h3 {
+  margin: 0 0 12px;
+  font-size: 1.7rem;
+}
+
+.registration-copy strong {
+  color: var(--text);
+}
+
+.registration-note {
+  margin-top: 18px;
+}
+
+.footer-card {
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  background: var(--surface);
+  box-shadow: var(--shadow);
+  backdrop-filter: blur(12px);
+  padding: 24px 28px;
+}
+
+.footer-card p {
+  margin: 0;
+  color: var(--muted);
+  line-height: 1.8;
+}
+
+.footer-card p + p {
+  margin-top: 12px;
+}
+
 .registration-grid {
   grid-template-columns: repeat(2, minmax(0, 1fr));
   margin-top: 18px;
@@ -913,5 +945,121 @@ body::before {
   .reveal {
     opacity: 1;
     transform: none;
+  }
+}
+
+
+.detail-hero {
+  display: grid;
+  gap: 24px;
+}
+
+.detail-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 18px;
+}
+
+.detail-summary {
+  display: grid;
+  gap: 18px;
+}
+
+.detail-list {
+  margin: 0;
+  padding-left: 20px;
+  color: var(--muted);
+  line-height: 1.85;
+}
+
+.detail-list li + li {
+  margin-top: 10px;
+}
+
+.category-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 22px;
+}
+
+.category-link {
+  margin-top: 18px;
+}
+
+.note-card {
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  background: rgba(255, 248, 245, 0.76);
+  box-shadow: var(--shadow);
+  padding: 22px;
+}
+
+.prize-list {
+  margin: 0;
+  padding-left: 18px;
+  color: var(--muted);
+  line-height: 1.8;
+}
+
+.prize-list li + li {
+  margin-top: 10px;
+}
+
+@media (max-width: 960px) {
+  .detail-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+
+.gallery-grid-featured {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.gallery-note {
+  margin-top: 18px;
+}
+
+.winner-year-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 16px;
+}
+
+.winner-year-card {
+  display: grid;
+  gap: 10px;
+  padding: 22px;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  background: var(--surface);
+  box-shadow: var(--shadow);
+  backdrop-filter: blur(12px);
+  text-decoration: none;
+  color: var(--text);
+}
+
+.winner-year-card strong {
+  font-size: 1.25rem;
+}
+
+.winner-year-card:hover,
+.winner-year-card:focus-visible {
+  transform: translateY(-2px);
+  box-shadow: 0 28px 64px rgba(101, 45, 144, 0.18);
+}
+
+@media (max-width: 960px) {
+  .gallery-grid-featured,
+  .winner-year-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 680px) {
+  .gallery-grid-featured,
+  .winner-year-grid {
+    grid-template-columns: 1fr;
   }
 }
