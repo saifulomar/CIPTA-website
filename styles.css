@@ -776,6 +776,19 @@ body::before {
   gap: 12px;
 }
 
+.contact-item {
+  display: grid;
+  gap: 6px;
+}
+
+.contact-label {
+  color: rgba(255, 250, 241, 0.68);
+  font-size: 0.82rem;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  font-weight: 700;
+}
+
 .contact-details a {
   color: #fffaf1;
   text-decoration: none;
